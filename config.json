@@ -1,0 +1,69 @@
+{
+  "output_rotation_order": "ZXY",
+  "scale_factor": 0.01,
+  "negate_y": true,
+  "negate_z": false,
+  "auto_detect_fps": true,
+  "default_fps": 30.0,
+  
+  "bone_mappings": {
+    "Hips": ["Pelvis", "Hips", "Bip01"],
+    "Spine": ["Spine", "Spine1", "Bip01 Spine"],
+    "Chest": ["Chest", "Spine2", "Spine3"],
+    "Neck": ["Neck", "Neck1"],
+    "Head": ["Head"],
+    "LeftShoulder": ["LeftShoulder", "L_Clavicle", "LeftClavicle"],
+    "LeftArm": ["LeftArm", "L_UpperArm", "LeftUpperArm"],
+    "LeftForeArm": ["LeftForeArm", "L_Forearm", "LeftForearm"],
+    "LeftHand": ["LeftHand", "L_Hand"],
+    "RightShoulder": ["RightShoulder", "R_Clavicle", "RightClavicle"],
+    "RightArm": ["RightArm", "R_UpperArm", "RightUpperArm"],
+    "RightForeArm": ["RightForeArm", "R_Forearm", "RightForearm"],
+    "RightHand": ["RightHand", "R_Hand"],
+    "LeftUpLeg": ["LeftUpLeg", "L_Thigh", "LeftThigh"],
+    "LeftLeg": ["LeftLeg", "L_Calf", "LeftCalf"],
+    "LeftFoot": ["LeftFoot", "L_Foot", "LeftFoot"],
+    "LeftToeBase": ["LeftToeBase", "L_Toe", "LeftToe"],
+    "RightUpLeg": ["RightUpLeg", "R_Thigh", "RightThigh"],
+    "RightLeg": ["RightLeg", "R_Calf", "RightCalf"],
+    "RightFoot": ["RightFoot", "R_Foot", "RightFoot"],
+    "RightToeBase": ["RightToeBase", "R_Toe", "RightToe"]
+  },
+  
+  "hierarchy_templates": {
+    "standard": [
+      ["Hips", null],
+      ["Spine", "Hips"],
+      ["Chest", "Spine"],
+      ["Neck", "Chest"],
+      ["Head", "Neck"],
+      ["LeftShoulder", "Chest"],
+      ["LeftArm", "LeftShoulder"],
+      ["LeftForeArm", "LeftArm"],
+      ["LeftHand", "LeftForeArm"],
+      ["RightShoulder", "Chest"],
+      ["RightArm", "RightShoulder"],
+      ["RightForeArm", "RightArm"],
+      ["RightHand", "RightForeArm"],
+      ["LeftUpLeg", "Hips"],
+      ["LeftLeg", "LeftUpLeg"],
+      ["LeftFoot", "LeftLeg"],
+      ["LeftToeBase", "LeftFoot"],
+      ["RightUpLeg", "Hips"],
+      ["RightLeg", "RightUpLeg"],
+      ["RightFoot", "RightLeg"],
+      ["RightToeBase", "RightFoot"]
+    ],
+    "simple": [
+      ["Hips", null],
+      ["Spine", "Hips"],
+      ["Head", "Spine"],
+      ["LeftArm", "Spine"],
+      ["LeftForeArm", "LeftArm"],
+      ["RightArm", "Spine"],
+      ["RightForeArm", "RightArm"],
+      ["LeftLeg", "Hips"],
+      ["RightLeg", "Hips"]
+    ]
+  }
+}
